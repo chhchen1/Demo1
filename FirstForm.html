@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>第一個表單</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        #Form {
+            /* color: white; */
+            /* background-color: black; */
+            background-image: url("bg2.gif");
+        }
+        .input{
+            background-color:cornsilk;
+          
+            
+        }
+        #important{
+            background-color: yellow;
+        }
+        body {
+            background-image: url("bg1.gif");
+            text-decoration-color: blue;
+            color:blue;
+            /*background-repeat: repeat-x;*/
+            /*background-repeat: repeat-y;*/
+            /*background-repeat: no-repeat;*/
+            /*background-attachment: fixed;*/
+
+        }
+    </style>
+</head>
+<body>
+    <div
+    <form id="Form">
+        <table>
+            <tr>
+                <td>姓名</td>
+                <td><input type="text" size="15" maxlength="40" name="name" required="required"></td>
+            </tr>
+            <tr>
+                <td>密碼</td>
+                <td><input type="password" size="15" maxlength="10" name="password" required="required"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" size="25" name="emailaddress" required="required"></td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td><input type="date" name="date" required="required"></td>
+            </tr>
+            <tr>
+                <td>性別</td>
+                <td>
+                    <input type="radio" name="gender" value="男" checked>Male
+                    <input type="radio" name="gender" value="女">Female
+                    <!-- <input type="radio" name="gender" value="其他">Other -->
+                </td>
+            </tr>
+            <tr>
+                <td>專長</td>
+                <td>
+                    <input type="checkbox" name="Expertise" value="system"> 程式語言
+                    <input type="checkbox" name="Expertise" value="software"> 系統分析
+                    <input type="checkbox" name="Expertise" value="internet"> 網路資訊安全
+                    <input type="checkbox" name="Expertise" value="internet"> 電腦組裝
+                </td>
+            </tr>
+            <tr>
+                <td>課程</td>
+                <td>
+                    <select name="course">
+                        <option value="1"> Visual Basic </option>
+                        <option value="2"> C++ </option>
+                        <option value="3"> Matlab </option>
+                        <option value="4"> GIS </option>
+                    </select>
+                </td>
+            <tr>
+                <td><input type="submit" value="送出"></td>
+                <td><input type="reset" value="重填"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
